@@ -1,0 +1,310 @@
+/* Reset جميع الهوامش والحشوات لجميع العناصر */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* القسم الرئيسي للصفحة */
+.main{
+    width: 100%; /* عرض كامل */
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(img/1.jpg); /* خلفية متدرجة مع صورة */
+    background-position: center; /* توسيط الخلفية */
+    background-size: cover; /* تغطية كاملة للمساحة */
+    height: 100vh; /* ارتفاع يساوي ارتفاع الشاشة */
+}
+
+/* شريط التنقل الرئيسي */
+.navbar{
+    width: 1200px; /* عرض ثابت */
+    height: 75px; /* ارتفاع ثابت */
+    margin: auto; /* توسيط أفقي */
+}
+
+/* حاوية الأيقونة */
+.icon{
+    width: 200px; /* عرض ثابت */
+    float: left; /* تطفو لليسار */
+    height: 70px; /* ارتفاع ثابت */
+}
+
+/* شعار الموقع */
+.logo{
+    color: #ff7200; /* لون برتقالي */
+    font-size: 35px; /* حجم الخط */
+    font-family: Arial; /* نوع الخط */
+    padding-left: 20px; /* حشو داخلي يسار */
+    float: left; /* تطفو لليسار */
+    padding-top: 10px; /* حشو داخلي أعلى */
+    margin-top: 5px /* هامش علوي */
+}
+
+/* قائمة التنقل */
+.menu{
+    width: 400px; /* عرض ثابت */
+    float: left; /* تطفو لليسار */
+    height: 70px; /* ارتفاع ثابت */
+}
+
+/* قائمة غير مرتبة */
+ul{
+    float: left; /* تطفو لليسار */
+    display: flex; /* نموذج flexbox */
+    justify-content: center; /* توسيط أفقي */
+    align-items: center; /* توسيط عمودي */
+}
+
+/* عناصر القائمة */
+ul li{
+    list-style: none; /* إزالة النقاط */
+    margin-left: 62px; /* هامش يسار */
+    margin-top: 27px; /* هامش علوي */
+    font-size: 14px; /* حجم الخط */
+}
+
+/* روابط القائمة */
+ul li a{
+    text-decoration: none; /* إزالة التسطير */
+    color: #fff; /* لون أبيض */
+    font-family: Arial; /* نوع الخط */
+    font-weight: bold; /* سمك الخط */
+    transition: 0.4s ease-in-out; /* تأثير انتقالي */
+}
+
+/* تأثير hover على روابط القائمة */
+ul li a:hover{
+    color: #ff7200; /* تغيير اللون عند المرور */
+}
+
+/* مربع البحث */
+.search{
+    width: 330px; /* عرض ثابت */
+    float: left; /* تطفو لليسار */
+    margin-left: 270px; /* هامش يسار */
+}
+
+/* حقل الإدخال للبحث */
+.srch{
+    font-family: 'Times New Roman'; /* نوع الخط */
+    width: 200px; /* عرض ثابت */
+    height: 40px; /* ارتفاع ثابت */
+    background: transparent; /* خلفية شفافة */
+    border: 1px solid #ff7200; /* إطار برتقالي */
+    margin-top: 13px; /* هامش علوي */
+    color: #fff; /* لون أبيض */
+    border-right: none; /* إزالة الحد الأيمن */
+    font-size: 16px; /* حجم الخط */
+    float: left; /* تطفو لليسار */
+    padding: 10px; /* حشو داخلي */
+    border-bottom-left-radius: 5px; /* زوايا دائرية */
+    border-top-left-radius: 5px; /* زوايا دائرية */
+}
+
+/* زر البحث */
+.btn{
+    width: 100px; /* عرض ثابت */
+    height: 40px; /* ارتفاع ثابت */
+    background: #ff7200; /* خلفية برتقالية */
+    border: 2px solid #ff7200; /* إطار برتقالي */
+    margin-top: 13px; /* هامش علوي */
+    color: #fff; /* لون أبيض */
+    font-size: 15px; /* حجم الخط */
+    border-bottom-right-radius: 5px; /* زوايا دائرية */
+    border-bottom-right-radius: 5px; /* زوايا دائرية */
+    transition: 0.2s ease; /* تأثير انتقالي */
+    cursor: pointer; /* مؤشر يد */
+}
+
+/* تأثير hover على زر البحث */
+.btn:hover{
+    color: #000; /* تغيير اللون عند المرور */
+}
+
+/* إزالة التأثير عند التركيز على الزر */
+.btn:focus{
+    outline: none; /* إزالة الحدود */
+}
+
+/* إزالة التأثير عند التركيز على حقل البحث */
+.srch:focus{
+    outline: none; /* إزالة الحدود */
+}
+
+/* محتوى الصفحة الرئيسي */
+.content{
+    width: 1200px; /* عرض ثابت */
+    height: auto; /* ارتفاع تلقائي */
+    margin: auto; /* توسيط أفقي */
+    color: #fff; /* لون أبيض */
+    position: relative; /* وضع نسبي */
+}
+
+/* فقرات المحتوى */
+.content .par{
+    padding-left: 20px; /* حشو داخلي يسار */
+    padding-bottom: 25px; /* حشو داخلي أسفل */
+    font-family: Arial; /* نوع الخط */
+    letter-spacing: 1.2px; /* تباعد الحروف */
+    line-height: 30px; /* تباعد الأسطر */
+}
+
+/* عنوان رئيسي */
+.content h1{
+    font-family: 'Times New Roman'; /* نوع الخط */
+    font-size: 50px; /* حجم الخط */
+    padding-left: 20px; /* حشو داخلي يسار */
+    margin-top: 9%; /* هامش علوي */
+    letter-spacing: 2px; /* تباعد الحروف */
+}
+
+/* زر Call-to-Action */
+.content .cn{
+    width: 160px; /* عرض ثابت */
+    height: 40px; /* ارتفاع ثابت */
+    background: #ff7200; /* خلفية برتقالية */
+    border: none; /* بدون إطار */
+    margin-bottom: 10px; /* هامش سفلي */
+    margin-left: 20px; /* هامش يسار */
+    font-size: 18px; /* حجم الخط */
+    border-radius: 10px; /* زوايا دائرية */
+    cursor: pointer; /* مؤشر يد */
+    transition: .4s ease; /* تأثير انتقالي */
+}
+
+/* رابط داخل زر CTA */
+.content .cn a{
+    text-decoration: none; /* إزالة التسطير */
+    color: #000; /* لون أسود */
+    transition: .3s ease; /* تأثير انتقالي */
+}
+
+/* تأثير hover على زر CTA */
+.cn:hover{
+    background-color: #fff; /* تغيير الخلفية عند المرور */
+}
+
+/* نص مميز */
+.content span{
+    color: #ff7200; /* لون برتقالي */
+    font-size: 65px /* حجم خط كبير */
+}
+
+/* نموذج تسجيل الدخول */
+.form{
+    width: 250px; /* عرض ثابت */
+    height: 380px; /* ارتفاع ثابت */
+    background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%); /* خلفية متدرجة */
+    position: absolute; /* وضع مطلق */
+    top: -20px; /* موقع علوي */
+    left: 870px; /* موقع أفقي */
+    transform: translate(0%,-5%); /* تحويل الموقع */
+    border-radius: 10px; /* زوايا دائرية */
+    padding: 25px; /* حشو داخلي */
+}
+
+/* عنوان النموذج */
+.form h2{
+    width: 220px; /* عرض ثابت */
+    font-family: sans-serif; /* نوع الخط */
+    text-align: center; /* توسيط النص */
+    color: #ff7200; /* لون برتقالي */
+    font-size: 22px; /* حجم الخط */
+    background-color: #fff; /* خلفية بيضاء */
+    border-radius: 10px; /* زوايا دائرية */
+    margin: 2px; /* هامش صغير */
+    padding: 8px; /* حشو داخلي */
+}
+
+/* حقول إدخال النموذج */
+.form input{
+    width: 240px; /* عرض ثابت */
+    height: 35px; /* ارتفاع ثابت */
+    background: transparent; /* خلفية شفافة */
+    border-bottom: 1px solid #ff7200; /* إطار سفلي فقط */
+    border-top: none; /* بدون إطار علوي */
+    border-right: none; /* بدون إطار أيمن */
+    border-left: none; /* بدون إطار أيسر */
+    color: #fff; /* لون أبيض */
+    font-size: 15px; /* حجم الخط */
+    letter-spacing: 1px; /* تباعد الحروف */
+    margin-top: 30px; /* هامش علوي */
+    font-family: sans-serif; /* نوع الخط */
+}
+
+/* إزالة التأثير عند التركيز على الحقل */
+.form input:focus{
+    outline: none; /* إزالة الحدود */
+}
+
+/* نص placeholder */
+::placeholder{
+    color: #fff; /* لون أبيض */
+    font-family: Arial; /* نوع الخط */
+}
+
+/* زر النموذج */
+.btnn{
+    width: 240px; /* عرض ثابت */
+    height: 40px; /* ارتفاع ثابت */
+    background: #ff7200; /* خلفية برتقالية */
+    border: none; /* بدون إطار */
+    margin-top: 30px; /* هامش علوي */
+    font-size: 18px; /* حجم الخط */
+    border-radius: 10px; /* زوايا دائرية */
+    cursor: pointer; /* مؤشر يد */
+    color: #fff; /* لون أبيض */
+    transition: 0.4s ease; /* تأثير انتقالي */
+}
+
+/* تأثير hover على زر النموذج */
+.btnn:hover{
+    background: #fff; /* تغيير الخلفية عند المرور */
+    color: #ff7200; /* تغيير اللون عند المرور */
+}
+
+/* رابط داخل زر النموذج */
+.btnn a{
+    text-decoration: none; /* إزالة التسطير */
+    color: #000; /* لون أسود */
+    font-weight: bold; /* سمك الخط */
+}
+
+/* قسم الروابط في النموذج */
+.form .link{
+    font-family: Arial, Helvetica, sans-serif; /* نوع الخط */
+    font-size: 17px; /* حجم الخط */
+    padding-top: 20px; /* حشو علوي */
+    text-align: center; /* توسيط النص */
+}
+
+/* روابط في النموذج */
+.form .link a{
+    text-decoration: none; /* إزالة التسطير */
+    color: #ff7200; /* لون برتقالي */
+}
+
+/* نص "تسجيل الدخول بواسطة" */
+.liw{
+    padding-top: 15px; /* حشو علوي */
+    padding-bottom: 10px; /* حشو سفلي */
+    text-align: center; /* توسيط النص */
+}
+
+/* أيقونات وسائل التواصل */
+.icons a{
+    text-decoration: none; /* إزالة التسطير */
+    color: #fff; /* لون أبيض */
+}
+
+/* أيقونات */
+.icons ion-icon{
+    color: #fff; /* لون أبيض */
+    font-size: 30px; /* حجم كبير */
+    padding-left: 14px; /* حشو يسار */
+    padding-top: 5px; /* حشو علوي */
+    transition: 0.3s ease; /* تأثير انتقالي */
+}
+
+/* تأثير hover على الأيقونات */
+.icons ion-icon:hover{
+    color: #ff7200; /* تغيير اللون عند المرور */
+}
